@@ -1,0 +1,318 @@
+/* Header part */
+
+.menu-mobile {
+    display: none;
+}
+
+.overlay-menu {
+    display: none;
+}
+
+.flower {
+    height: 80px;
+    width: 80px;
+    padding-left: 100px;
+    padding-top: 40px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+.phone {
+    height: 15px;
+    padding-right: 5px;
+}
+
+.bg-img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.header {
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+.menu {
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    text-align: right;
+    padding: 20px;
+    margin-right: 45px;
+    padding-top: 50px !important;
+}
+
+.menu a {
+    padding: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    color: blue;
+}
+
+.menu button {
+    border: 1px solid white;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(204, 43, 43);
+    padding: 0px !important;
+}
+
+.menu button:hover {
+    background-color: rgba(243, 108, 108, 0.747);
+}
+
+.title {
+    padding-top: 60px;
+    text-align: center;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    line-height: 55px;
+}
+
+.big-title {
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.sub-title {
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden; 
+}
+
+/*End of Header part*/
+
+/*How to order part*/
+
+.how-to-container {
+    text-align: center;
+    font-family: 'Economica', sans-serif;
+}
+
+.how-to-title {
+    font-size: 85px;
+    color: rgb(192, 62, 53);
+    padding: 20px;
+}
+
+.steps {
+    padding: 40px;
+    display: grid;
+    justify-content: space-around;
+    display: flex;
+    font-family: 'Economica', sans-serif;
+}
+
+.descr {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    width: 140px;
+}
+
+.img {
+    width: 140px;
+}
+
+/* End of How to section*/
+
+/* Menu section*/
+
+.speisekarte-title {
+    width: 100%;
+    text-align: center;
+    font-family: 'Economica', sans-serif;
+}
+
+.speisekarte-title h1 {
+    font-size: 85px;
+    color: rgb(192, 62, 53);
+    font-weight: 900;
+    font-stretch: narrower;
+}
+
+.speisekarte-bg {
+    background-image: url("./img/background.jpg");
+    background-size: cover;
+    font-family: 'Economica', sans-serif;
+    flex-flow: column;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 60px;
+}
+
+.row {
+    padding: 30px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.row-reverse {
+    padding: 30px;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.speisekarte-img {
+    width: 300px;
+    height: 300px;
+}
+
+.t-header {
+    padding-bottom: 30px;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+td {
+    color: rgb(90, 90, 90);
+    font-size: 40px;
+}
+
+.bg-img-menu {
+    width: 100%;
+    height: 1350px;
+}
+
+.adress {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    line-height: 15px;
+}
+
+.adress-title {
+    font-size: 60px;
+    color: rgb(192, 62, 53);
+    font-weight: bolder;
+}
+
+.full-adress {
+    font-size: 30px;
+}
+
+.location {
+    height: 25px;
+    padding-right: 5px;
+}
+
+.footer {
+    padding: 40px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.footer a {
+    padding: 20px;
+}
+
+.sakura {
+    padding-top: 15px;
+}
+
+.impressum {
+    font-family: 'Economica', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media(max-width: 1000px) {
+    body {
+        overflow-x: hidden!important;
+        
+    }
+    .menu-mobile {
+        display: flex;
+        position: absolute;
+        right: 16px;
+        width: 50px;
+        top: 16px;
+        cursor: pointer;
+        filter: invert(1);
+        z-index: 1;
+    }
+    .overlay-menu {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        background-color: rgb(94, 93, 93);
+        border-left: 1px solid black;
+        transform: translateX(100vw);
+        transition: all 225ms ease-in-out;
+    }
+    .overlay-menu a, button {
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        margin-top: 32px;
+        margin-left: 16px;
+    }
+    .overlay-menu button {
+        border: 1px solid white;
+        height: 40px;
+        border-radius: 5px;
+        background-color: rgb(204, 43, 43);
+    }
+    .show-overlay-menu {
+       transform: translateX(0);
+    }
+    .title {
+        padding-top: 120px;
+    }
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+    .row {
+        align-items: center;
+        flex-direction: column;
+    }
+    .row-reverse {
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer {
+        align-items: center;
+        flex-direction: column;
+    }
+    .social-media {
+        display: flex;
+    }
+    .full-adress {
+        font-size: 1.5em;
+        line-height: normal;
+    }
+    .adress-title {
+        font-size: 2.5em;
+    }
+    .speisekarte-title h1 {
+        font-size: 4em;
+    }
+    .how-to-title {
+        font-size: 4em;
+    }
+    .t-header {
+        text-align: left;
+    }
+    .phone, .flower, .menu {
+        display: none;
+    }
+}
